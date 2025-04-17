@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar-18 qc libcoordinate_transform_lib.a CMakeFiles/coordinate_transform_lib.dir/src/coordinate_transform_lib.cpp.o
+/usr/bin/llvm-ranlib-18 libcoordinate_transform_lib.a

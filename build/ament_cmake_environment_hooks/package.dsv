@@ -1,0 +1,4 @@
+source;share/coordinate_transform_lib/local_setup.bash
+source;share/coordinate_transform_lib/local_setup.dsv
+source;share/coordinate_transform_lib/local_setup.sh
+source;share/coordinate_transform_lib/local_setup.zsh

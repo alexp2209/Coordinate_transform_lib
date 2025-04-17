@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250414-1300-Experimental"
+	Name="alex-PC"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/bin/clang++-18"
+	CompilerVersion="18.1.3"
+	OSName="Linux"
+	Hostname="alex-PC"
+	OSRelease="6.8.0-57-generic"
+	OSVersion="#59-Ubuntu SMP PREEMPT_DYNAMIC Sat Mar 15 17:40:59 UTC 2025"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="16"
+	ModelID="5"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="3"
+	NumberOfPhysicalCPU="3"
+	TotalVirtualMemory="4766"
+	TotalPhysicalMemory="5670"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="1800"
+	>
+	<Testing>
+		<StartDateTime>Apr 14 18:51 +05</StartDateTime>
+		<StartTestTime>1744638714</StartTestTime>
+		<TestList/>
+		<EndDateTime>Apr 14 18:51 +05</EndDateTime>
+		<EndTestTime>1744638714</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
