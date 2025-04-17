@@ -1,0 +1,49 @@
+\doxysection{Coordinate\+Transformer Class Reference}
+\hypertarget{classCoordinateTransformer}{}\label{classCoordinateTransformer}\index{CoordinateTransformer@{CoordinateTransformer}}
+
+
+Класс для преобразования координат между системами отсчёта с учётом смещения, ориентации и проверки границ.  
+
+
+
+
+{\ttfamily \#include $<$coordinate\+\_\+transform\+\_\+lib.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCoordinateTransformer_a0d701ad2cc0b09cbe7ee67a2f8c31553}\label{classCoordinateTransformer_a0d701ad2cc0b09cbe7ee67a2f8c31553} 
+{\bfseries Coordinate\+Transformer} (rclcpp\+::\+Node\+::\+Shared\+Ptr node)
+\begin{DoxyCompactList}\small\item\em Конструктор \doxylink{classCoordinateTransformer}{Coordinate\+Transformer}. \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_aeb0922a605c88bb65293d47b1e7f0dbf}\label{classCoordinateTransformer_aeb0922a605c88bb65293d47b1e7f0dbf} 
+Result\+Status {\bfseries convert} (const geometry\+\_\+msgs\+::msg\+::\+Pose\+Stamped \&input, geometry\+\_\+msgs\+::msg\+::\+Pose\+Stamped \&output, const std\+::string \&target\+\_\+frame)
+\begin{DoxyCompactList}\small\item\em метод для прямого преобразования координат из исходного пространства в целевое \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_a14e43f45506908bfd5d926a38771f686}\label{classCoordinateTransformer_a14e43f45506908bfd5d926a38771f686} 
+Result\+Status {\bfseries inverse\+Convert} (const geometry\+\_\+msgs\+::msg\+::\+Pose\+Stamped \&input, geometry\+\_\+msgs\+::msg\+::\+Pose\+Stamped \&output, const std\+::string \&source\+\_\+frame)
+\begin{DoxyCompactList}\small\item\em метод для обратного преобразования координат из целевого пространства в исходное \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_a31079cc575d864bdcc652dba4b05cbf5}\label{classCoordinateTransformer_a31079cc575d864bdcc652dba4b05cbf5} 
+bool {\bfseries load\+Transforms\+From\+YAML} (const std\+::string \&yaml\+\_\+file)
+\begin{DoxyCompactList}\small\item\em метод для загрузки трансформации из YAML-\/файла \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_ae5d8ddc5183ef9ed18b12f3545ad164c}\label{classCoordinateTransformer_ae5d8ddc5183ef9ed18b12f3545ad164c} 
+void {\bfseries add\+Transform} (const std\+::string \&parent\+\_\+frame, const std\+::string \&child\+\_\+frame, const tf2\+::\+Vector3\+Double\+Data \&translation, const tf2\+::\+Quaternion \&rotation)
+\begin{DoxyCompactList}\small\item\em метод для добавления трансформации вручную \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_a11167885da71f1c0cee7f59daa1f61ed}\label{classCoordinateTransformer_a11167885da71f1c0cee7f59daa1f61ed} 
+tf2\+::\+Vector3 {\bfseries transform\+Point} (const std\+::string \&from\+\_\+frame, const std\+::string \&to\+\_\+frame, const tf2\+::\+Vector3\+Double\+Data \&point) const
+\begin{DoxyCompactList}\small\item\em метод для прямого преобразование координат из родительской в дочернюю систему отсчета \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_acd85a2cf9d595d1fac1949f201c1b713}\label{classCoordinateTransformer_acd85a2cf9d595d1fac1949f201c1b713} 
+bool {\bfseries can\+Transform} (const std\+::string \&from\+\_\+frame, const std\+::string \&to\+\_\+frame) const
+\begin{DoxyCompactList}\small\item\em метод для проверки возможности трансформации между системами \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_a0ac20cf7ae3844296f498eb0b4596c46}\label{classCoordinateTransformer_a0ac20cf7ae3844296f498eb0b4596c46} 
+void {\bfseries set\+Bounds} (const std\+::string \&frame\+\_\+id, const geometry\+\_\+msgs\+::msg\+::\+Point \&min, const geometry\+\_\+msgs\+::msg\+::\+Point \&max)
+\begin{DoxyCompactList}\small\item\em метод для проверки границ \end{DoxyCompactList}\item 
+\Hypertarget{classCoordinateTransformer_a25469a2b8a6ef59faf365f7298d7223e}\label{classCoordinateTransformer_a25469a2b8a6ef59faf365f7298d7223e} 
+bool {\bfseries compute\+Transform} (const std\+::string \&from\+\_\+frame, const std\+::string \&to\+\_\+frame, tf2\+::\+Transform \&out\+\_\+transform) const
+\begin{DoxyCompactList}\small\item\em метод для для вычисления преобразования координат между различными системами отсчета \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для преобразования координат между системами отсчёта с учётом смещения, ориентации и проверки границ. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/coordinate\+\_\+transform\+\_\+lib/coordinate\+\_\+transform\+\_\+lib.\+h\end{DoxyCompactItemize}
